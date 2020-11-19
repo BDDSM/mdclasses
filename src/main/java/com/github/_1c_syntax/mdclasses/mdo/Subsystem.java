@@ -48,8 +48,6 @@ public class Subsystem extends MDObjectBase {
    * Для объектов, которые не удалось прочитать (при загрузке конфигурации) хранит только строки
    */
   @XStreamImplicit
-  @ToStringExclude
-  @HashCodeExclude
   private List<Either<String, MDObjectBase>> children = Collections.emptyList();
 
   /**
